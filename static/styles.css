@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f6e8e8;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    max-width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #cf64a5; /* Blue color */
+    font-weight: 600;
+}
+
+form {
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto 15px;
+    padding: 10px; /* Adjusted padding for a more compact look */
+    border: 3px solid #cf64a5; /* Blue border */
+    border-radius: 8px;
+    background-color: #dab5cb; /* Light blue background for input */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #cf64a5; /* Pink background color */
+    color: white;
+    padding: 8px 16px; /* Padding for button */
+    border: 2px;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+
+.result {
+    margin-top: 20px;
+}
+
+.result img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #e9ecef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result h2 {
+    font-size: 30px;
+    color: #eaeef1;
+}
+
+/* Spinner */
+.spinner {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 6px solid #28a745;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
